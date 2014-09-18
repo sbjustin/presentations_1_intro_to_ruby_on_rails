@@ -1,0 +1,23 @@
+<div>
+  <h1>Whose game is it anyway?</h1>
+</div>
+
+<%= form_tag 'search' do %>
+  
+  
+  <%= label_tag :who_is_coming %><br>
+  <% @people.each do |p| %>  
+    <div class="field">
+      <%= check_box_tag 'ids[]', p.id %>
+      <%= label_tag p.name %>
+    </div>
+  <% end %>
+  <div class="actions">
+    <%= submit_tag 'Search' %>
+  </div>
+<% end %>
+
+<div>
+  <%= link_to 'Manage Games', games_path %> | 
+  <%= link_to 'Manage People', people_path %>
+</div>

@@ -1,0 +1,45 @@
+Intro to Ruby on Rails
+
+# Talk about Ruby
+# Talk about Ruby On Rails
+# Talk about MVC
+  # Model - 
+  # View - 
+  # Controller - 
+# Install Rails
+# Explain Rails
+  app/assets/images
+  app/assets/javascripts
+  app/assets/stylesheets
+  app/controllers
+  app/models
+  app/views
+  config/database.yml
+  config/routes.rb
+  Gemfile
+
+# RVM maybe
+  # rvm --default use 2.1.2
+  # rvm use 2.1.2@whose_line --create
+
+# Installing Ruby on Rails
+  # http://rubyonrails.org/
+    # Ruby
+    # Ruby Gems
+    # Rails - gem install rails
+  # Install database of choice
+
+# new Rails app
+  # mysql/oracle/postgresql/sqlite3/frontbase/ibm_db/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc
+  # rails new whose_game_is_it_anyway -d mysql
+  # bundle install
+  # rails generate scaffold Game title:string description:text number_of_players:integer
+  # rails generate scaffold Person name:string
+  
+  # Config database.yml
+  # rake db:create
+  # rake db:migrate
+
+  # create migration
+  # has_many/belongs_to to model
+  # rake db:migrate
